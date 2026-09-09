@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Main, JEE Advanced & KCET Preparation Tracker</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/views.css">
+
+    <!-- Chart.js CDN with graceful fallback -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" onerror="console.warn('Chart.js CDN failed to load. Falling back to native SVG/CSS graphs.');"></script>
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar-container">
+        <div class="brand-header">
+            <div class="brand-logo">🎯</div>
+            <div class="brand-text">
+                <h2>JEE & KCET</h2>
+                <span>Prep Tracker 2026</span>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li>
+                <a href="#" class="nav-link active" data-tab="dashboard">
+                    <span class="nav-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="planner">
+                    <span class="nav-icon">📅</span>
+                    <span>Today's Plan</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="weakness">
+                    <span class="nav-icon">⚠️</span>
+                    <span>Weakness Analysis</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="subjects">
+                    <span class="nav-icon">📚</span>
+                    <span>Subject Mastery</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="exams">
+                    <span class="nav-icon">🎯</span>
+                    <span>Exam Readiness</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="chapters">
+                    <span class="nav-icon">📖</span>
+                    <span>Chapter Tracker</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="study">
+                    <span class="nav-icon">⏱️</span>
+                    <span>Study Tracker</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="pyq">
+                    <span class="nav-icon">📝</span>
+                    <span>PYQ Tracker</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="mocktests">
+                    <span class="nav-icon">🏆</span>
+                    <span>Mock Tests</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="revision">
+                    <span class="nav-icon">🔄</span>
+                    <span>Spaced Revision</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-tab="analytics">
+                    <span class="nav-icon">📈</span>
+                    <span>Visual Analytics</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <button class="btn btn-outline btn-full" onclick="UI.toggleTheme()">☀️ / 🌙 Toggle Theme</button>
+            <button class="btn btn-secondary btn-full" onclick="App.exportBackup()">💾 Export Backup</button>
+            <label class="btn btn-outline btn-full" style="cursor: pointer;">
+                📂 Import Backup
+                <input type="file" id="import-file-input" accept=".json" style="display:none;" onchange="App.importBackup(this)">
+            </label>
+            <button class="btn btn-outline btn-full text-red" onclick="App.confirmReset()">⚠️ Reset Data</button>
+        </div>
+    </aside>
+
+    <!-- Main Workspace Area -->
+    <div class="main-wrapper">
+        
+        <!-- Sticky Top Navigation Header -->
+        <header class="top-bar">
+            <div class="top-left">
+                <button class="mobile-toggle-btn" id="mobile-nav-toggle">☰</button>
+                <div class="header-badge">🚀 Target: JEE Main & Advanced | KCET 2026</div>
+            </div>
+
+            <div class="top-right">
+                <button class="btn btn-primary" onclick="App.openLogStudyModal()">+ Quick Study Log</button>
+                <button class="btn btn-secondary" onclick="App.openMockTestModal()">+ Record Mock Test</button>
+            </div>
+        </header>
+
+        <!-- Dynamic View Outlet -->
+        <main class="content-body" id="main-content-view">
+            <!-- View content dynamically injected by app.js -->
+        </main>
+    </div>
+
+</div>
+
+<!-- JavaScript Files -->
+<script src="js/data/syllabus.js"></script>
+<script src="js/data/storage.js"></script>
+<script src="js/data/smartEngine.js"></script>
+<script src="js/components/charts.js"></script>
+<script src="js/components/ui.js"></script>
+<script src="js/views/dashboardView.js"></script>
+<script src="js/views/plannerView.js"></script>
+<script src="js/views/weaknessView.js"></script>
+<script src="js/views/subjectsView.js"></script>
+<script src="js/views/examView.js"></script>
+<script src="js/views/chapterView.js"></script>
+<script src="js/views/studyView.js"></script>
+<script src="js/views/pyqView.js"></script>
+<script src="js/views/mockTestView.js"></script>
+<script src="js/views/revisionView.js"></script>
+<script src="js/views/analyticsView.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

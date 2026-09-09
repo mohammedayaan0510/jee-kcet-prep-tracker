@@ -1,0 +1,1487 @@
+/* =========================================================
+   VIEWS SPECIFIC STYLES
+========================================================= */
+
+.view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.view-header h1 {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.view-header p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 28px 0 16px;
+}
+
+.section-title h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ================= Dashboard View ================= */
+.dashboard-hero {
+    background: linear-gradient(135deg, #4f46e5, #3730a3);
+    color: #ffffff;
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-md);
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.hero-content p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero-quick-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-quick-actions .btn-secondary {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: none;
+}
+
+.hero-quick-actions .btn-outline {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.hero-progress-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius-lg);
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-progress-box .progress-ring-text {
+    color: var(--text-primary);
+}
+
+.dashboard-hero .hero-progress-box .progress-ring-text {
+    color: #ffffff;
+}
+
+.hero-ring-info strong {
+    display: block;
+    font-size: 16px;
+}
+
+.hero-ring-info span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* SMART RECOMMENDATIONS WIDGET */
+.smart-recommendations-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.smart-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.smart-card-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.smart-card-header p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.smart-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.smart-action-item {
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.action-num {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-full);
+    background: var(--primary);
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.action-details {
+    flex: 1;
+}
+
+.action-details h4 {
+    font-size: 14px;
+    margin: 4px 0 2px;
+}
+
+.action-reason {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.smart-stats-footer {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+    font-size: 13px;
+}
+
+.smart-stat-chip {
+    background: var(--bg-card-subtle);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+}
+
+/* Subject Grid */
+.subject-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.subject-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.subject-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.subject-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.subj-icon {
+    font-size: 24px;
+}
+
+.subject-card-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 12px;
+}
+
+/* Exam Readiness Grid */
+.exam-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.exam-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.exam-readiness-circle {
+    margin: 20px 0;
+}
+
+.exam-readiness-circle strong {
+    font-size: 36px;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+}
+
+.exam-readiness-circle span {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.exam-metrics {
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exam-metric-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+/* Daily Tracker Card */
+.daily-tracker-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-top: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.daily-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.daily-overall-badge {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.daily-targets-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.target-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+/* ================= Weakness Analysis View ================= */
+.weakness-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.weakness-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.weakness-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.chip-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+}
+
+.weakness-card-top h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.weakness-metrics-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background: var(--bg-card-subtle);
+    padding: 12px;
+    border-radius: var(--radius-md);
+    font-size: 12px;
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-item span {
+    color: var(--text-muted);
+}
+
+.weakness-rec-box {
+    background: var(--primary-light);
+    border: 1px solid rgba(79, 70, 229, 0.2);
+    border-radius: var(--radius-md);
+    padding: 10px 14px;
+    font-size: 13px;
+}
+
+.weakness-rec-box span {
+    display: block;
+    font-size: 11px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.weakness-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+/* ================= Today's Daily Planner View ================= */
+.planner-metrics-hero {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-sm);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metrics-right-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.planner-stat-pill {
+    background: var(--bg-card-subtle);
+    padding: 12px 18px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.planner-stat-pill span {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.planner-stat-pill strong {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.planner-section-block {
+    margin-bottom: 28px;
+}
+
+.planner-section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+}
+
+.planner-task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.planner-task-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+}
+
+.planner-task-item.completed {
+    opacity: 0.65;
+    background: var(--bg-card-subtle);
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.task-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-title.strike {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.task-sub-chips {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.chip-sm {
+    font-size: 11px;
+    background: var(--bg-card-subtle);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+}
+
+.tag-revision { background: #e0e7ff; color: #4338ca; }
+.tag-pyq { background: #f3e8ff; color: #7e22ce; }
+.tag-concept { background: #d1fae5; color: #059669; }
+
+/* ================= Revision Spaced System ================= */
+.revision-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.revision-item-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.revision-item-card.card-overdue {
+    border: 2px solid #ef4444;
+}
+
+.rev-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rev-level-badge {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.rev-dates-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    background: var(--bg-card-subtle);
+    padding: 10px 14px;
+    border-radius: var(--radius-md);
+}
+
+.rev-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.history-item-row {
+    background: var(--bg-card-subtle);
+    padding: 10px 14px;
+    border-radius: var(--radius-md);
+    font-size: 13px;
+}
+
+.history-item-row div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.history-item-row span {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Responsive Overrides */
+@media (max-width: 900px) {
+    .metrics-right-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ================= Revision Banners ================= */
+.needs-revision-banner {
+    background: linear-gradient(135deg, #fef2f2, #fff1f2);
+    border: 2px solid #fca5a5;
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    margin-bottom: 24px;
+}
+
+.banner-head h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #dc2626;
+    margin-bottom: 4px;
+}
+
+.banner-head p {
+    font-size: 13px;
+    color: #ef4444;
+}
+
+.needs-revision-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.revision-item-chip {
+    background: #fff;
+    border: 1px solid #fca5a5;
+    border-radius: var(--radius-full);
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.revision-item-chip .btn-xs {
+    background: #dc2626;
+    font-size: 11px;
+    padding: 3px 8px;
+}
+
+.revision-clean-banner {
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    border: 1px solid #86efac;
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    text-align: center;
+}
+
+.revision-clean-banner h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #16a34a;
+    margin-bottom: 4px;
+}
+
+.revision-clean-banner p {
+    font-size: 13px;
+    color: #4ade80;
+}
+
+.dark-theme .needs-revision-banner {
+    background: rgba(220, 38, 38, 0.08);
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+.dark-theme .revision-clean-banner {
+    background: rgba(22, 163, 74, 0.08);
+    border-color: rgba(22, 163, 74, 0.3);
+}
+
+/* ================= Study Hero Grid ================= */
+.study-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.streak-hero-card {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.streak-flame { font-size: 40px; }
+
+.streak-text-info h3 { font-size: 14px; opacity: 0.9; margin-bottom: 4px; }
+.streak-large-val { font-size: 36px; font-weight: 800; line-height: 1.1; }
+.streak-large-val span { font-size: 18px; }
+.streak-text-info p { font-size: 12px; opacity: 0.85; margin-top: 6px; }
+
+.daily-goals-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.card-head-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.goal-pct-pill {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.goal-input-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.goal-box label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.input-with-target {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-with-target input {
+    flex: 1;
+}
+
+.input-with-target span {
+    font-size: 13px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.goals-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ================= Subject Summary Banner ================= */
+.subject-summary-banner {
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.subject-summary-banner.physics { background: linear-gradient(135deg, #eff6ff, #dbeafe); border: 1px solid #93c5fd; }
+.subject-summary-banner.chemistry { background: linear-gradient(135deg, #ecfdf5, #d1fae5); border: 1px solid #6ee7b7; }
+.subject-summary-banner.maths { background: linear-gradient(135deg, #fffbeb, #fef3c7); border: 1px solid #fcd34d; }
+
+.dark-theme .subject-summary-banner.physics { background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); }
+.dark-theme .subject-summary-banner.chemistry { background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3); }
+.dark-theme .subject-summary-banner.maths { background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3); }
+
+.summary-text-box h2 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+.summary-text-box p { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; }
+
+.summary-chips {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: var(--radius-full);
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+.dark-theme .chip {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.15);
+}
+
+/* ================= PYQ View ================= */
+.pyq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.pyq-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.pyq-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pyq-card-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pyq-acc-big {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.pyq-stats-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 12px;
+    background: var(--bg-card-subtle);
+    border-radius: var(--radius-md);
+    margin-bottom: 16px;
+}
+
+.pyq-input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.pyq-field label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+/* ================= Exam View ================= */
+.exam-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.exam-detail-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.exam-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.exam-readiness-meter {
+    height: 12px;
+    background: var(--bg-card-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin: 16px 0;
+}
+
+.exam-readiness-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    transition: width 0.5s ease;
+}
+
+.exam-readiness-fill.main { background: var(--primary); }
+.exam-readiness-fill.adv { background: var(--adv-color); }
+.exam-readiness-fill.kcet { background: var(--kcet-color); }
+
+/* ================= Planner Tasks Container ================= */
+.planner-tasks-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= Subject View Unit Accordion ================= */
+.subject-unit-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.unit-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.unit-card-header {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.unit-card-header:hover { background: var(--bg-card-subtle); }
+
+.unit-title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.unit-title-row h3 { font-size: 15px; font-weight: 700; }
+.unit-status-indicator { font-size: 12px; color: var(--text-muted); }
+
+.unit-card-body {
+    padding: 0 20px 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.unit-card-body.hidden { display: none; }
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.topic-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: var(--radius-md);
+    background: var(--bg-card-subtle);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.topic-item:hover { background: var(--border-color); }
+.topic-item.done { background: #f0fdf4; color: #16a34a; }
+.dark-theme .topic-item.done { background: rgba(22, 163, 74, 0.15); color: #4ade80; }
+
+/* Responsive helpers for study hero */
+@media (max-width: 768px) {
+    .study-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .goal-input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-right-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .smart-actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subject-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exam-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-hero {
+        flex-direction: column;
+    }
+
+    .daily-targets-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   SUBJECT MASTERY — GROUPED CHAPTER LAYOUT
+   ========================================================= */
+
+/* Standard Section */
+.std-section-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.std-section-header {
+    padding: 18px 22px;
+    cursor: pointer;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.std-section-header:hover {
+    background: var(--bg-card-subtle);
+}
+
+.std-section-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.std-collapse-arrow {
+    width: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.std-section-title-row h2 {
+    font-size: 19px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.std-section-meta {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-left: 4px;
+}
+
+.std-section-progress-bar {
+    height: 7px;
+    background: var(--bg-card-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.std-section-progress-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    transition: width 0.4s ease;
+}
+
+.std-section-progress-fill.physics {
+    background: var(--phy-color);
+}
+
+.std-section-progress-fill.chemistry {
+    background: var(--chem-color);
+}
+
+.std-section-progress-fill.maths {
+    background: var(--math-color);
+}
+
+.std-section-body {
+    padding: 20px;
+}
+
+.std-section-body.collapsed {
+    display: none;
+}
+
+
+/* Category Groups */
+.category-group-block {
+    margin-bottom: 24px;
+}
+
+.category-group-block:last-child {
+    margin-bottom: 0;
+}
+
+.category-group-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    color: var(--text-secondary);
+
+    padding: 10px 14px;
+    margin-bottom: 12px;
+
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+
+/* Chapter Cards Container */
+.chapter-cards-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+
+/* Individual Chapter Card */
+.chapter-mastery-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+
+    padding: 16px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.chapter-mastery-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+
+/* Main Card Layout */
+.chapter-card-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+/* Chapter Number */
+.chapter-num-badge {
+    width: 32px;
+    height: 32px;
+
+    min-width: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--radius-md);
+
+    background: var(--primary-light);
+    color: var(--primary);
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* Chapter Information */
+.chapter-card-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.chapter-card-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.chapter-card-title-row h4 {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin: 0;
+}
+
+
+/* Status Button */
+.chapter-card-title-row .status-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+
+/* Chapter Statistics */
+.chapter-card-stats-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+.card-stat-chip {
+    display: inline-flex;
+    align-items: center;
+
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-color);
+
+    padding: 5px 8px;
+
+    border-radius: var(--radius-sm);
+
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.card-stat-chip strong {
+    color: var(--text-primary);
+    margin-left: 3px;
+}
+
+.pyq-pct-chip {
+    font-weight: 700;
+}
+
+
+/* Topics Button */
+.topics-toggle-btn {
+    flex-shrink: 0;
+
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-color);
+
+    color: var(--text-secondary);
+
+    border-radius: var(--radius-sm);
+
+    padding: 6px 9px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.topics-toggle-btn:hover {
+    background: var(--primary-light);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+
+/* Chapter Progress Bar */
+.chapter-mastery-card .progress-bar-container {
+    height: 7px;
+    margin: 10px 0;
+}
+
+
+/* Topic Checklist */
+.topic-checklist {
+    margin-top: 14px;
+    padding-top: 14px;
+
+    border-top: 1px solid var(--border-color);
+}
+
+.topic-checklist .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.topic-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    padding: 9px 10px;
+
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-sm);
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+}
+
+.topic-check-item:hover {
+    border-color: var(--primary);
+}
+
+.topic-check-item input {
+    margin-top: 2px;
+    accent-color: var(--primary);
+}
+
+.topic-check-item.done {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #15803d;
+}
+
+.dark-theme .topic-check-item.done {
+    background: rgba(22, 163, 74, 0.12);
+    border-color: rgba(74, 222, 128, 0.3);
+    color: #4ade80;
+}
+
+
+/* Chemistry Branch Tabs */
+.sub-branch-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.branch-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+
+/* Subject Search / Filter */
+.subjects-filter-bar {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+
+    padding: 16px 18px;
+
+    margin-bottom: 20px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-group:first-child {
+    flex: 1;
+}
+
+.filter-group label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+.filter-group input,
+.filter-group select {
+    min-height: 38px;
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+
+    background: var(--bg-card);
+    color: var(--text-primary);
+
+    padding: 7px 11px;
+
+    font-size: 13px;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+
+/* Empty State */
+.empty-chart-fallback {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+
+    padding: 50px 20px;
+
+    text-align: center;
+}
+
+.empty-chart-fallback p {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.empty-chart-fallback span {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   SUBJECT MASTERY RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+    .chapter-cards-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .subjects-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .std-section-body {
+        padding: 14px;
+    }
+
+    .chapter-card-main {
+        flex-wrap: wrap;
+    }
+
+    .chapter-card-info {
+        min-width: calc(100% - 45px);
+    }
+
+    .topics-toggle-btn {
+        margin-left: 44px;
+    }
+
+    .topic-checklist .topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .std-section-title-row {
+        align-items: flex-start;
+    }
+
+    .std-section-meta {
+        width: 100%;
+        margin-left: 30px;
+    }
+}
+

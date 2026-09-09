@@ -1,0 +1,816 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+/* =========================
+   DASHBOARD HEADER
+========================= */
+
+.dashboard-header {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.header-badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-text h1 {
+    margin: 15px 0 8px;
+    font-size: 34px;
+}
+
+.header-text p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.header-summary {
+    display: flex;
+    gap: 35px;
+}
+
+.summary-item {
+    text-align: center;
+}
+
+.summary-item strong {
+    display: block;
+    font-size: 22px;
+}
+
+.summary-item span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   SUBJECT CARDS
+========================= */
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+    min-width: 0;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    background: #4f46e5;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+
+/* =========================
+   CHAPTER CARD
+========================= */
+
+.chapter-card {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.chapter-summary {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+}
+
+.chapter-summary p {
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CHAPTER LIST
+========================= */
+
+.chapter-list {
+    margin-top: 15px;
+}
+
+.chapter-list h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+.chapter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.chapter span {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.chapter button {
+    flex-shrink: 0;
+    font-size: 12px;
+    padding: 7px 10px;
+}
+
+
+/* =========================
+   EXPAND BUTTON
+========================= */
+
+.expand-button {
+    width: 100%;
+    margin-top: 15px;
+    background: #111827;
+}
+
+.expand-button:hover {
+    background: #1f2937;
+}
+
+
+/* =========================
+   OVERALL PREPARATION
+========================= */
+
+.overall-header {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 25px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.overall-header h3 {
+    margin: 0 0 6px;
+}
+
+.overall-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.overall-number {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.overall-bar {
+    height: 14px;
+    margin-top: 15px;
+}
+
+.subject-progress {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    margin-top: 15px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.subject-progress-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    width: 100%;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h3 {
+    margin-top: 0;
+}
+
+.stat-card p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .subjects {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .header-summary {
+        display: none;
+    }
+
+    .dashboard-header {
+        display: block;
+    }
+
+    .subject-progress {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .dashboard-header {
+        padding: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .chapter {
+        align-items: flex-start;
+    }
+
+    .chapter span {
+        max-width: 65%;
+    }
+}
+
+/* =========================================================
+   SUBJECT MASTERY — GROUPED CHAPTER LAYOUT
+   ========================================================= */
+
+/* Search + Status Filter */
+.subjects-filter-bar {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-sm);
+    flex-wrap: wrap;
+}
+
+.subjects-filter-bar .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.subjects-filter-bar .filter-group:first-child {
+    flex: 1;
+    min-width: 260px;
+}
+
+.subjects-filter-bar label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+.subjects-filter-bar input,
+.subjects-filter-bar select {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-size: 13px;
+    outline: none;
+}
+
+.subjects-filter-bar input:focus,
+.subjects-filter-bar select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+
+/* Chemistry Branch Tabs */
+.sub-branch-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.branch-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-right: 4px;
+}
+
+
+/* =========================================================
+   STANDARD SECTIONS
+   ========================================================= */
+
+.std-section-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.std-section-header {
+    padding: 18px 20px;
+    cursor: pointer;
+    background: var(--bg-card);
+    transition: background 0.2s ease;
+}
+
+.std-section-header:hover {
+    background: var(--bg-card-subtle);
+}
+
+.std-section-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.std-collapse-arrow {
+    font-size: 13px;
+    width: 18px;
+    color: var(--text-secondary);
+}
+
+.std-section-title-row h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.std-section-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 4px;
+}
+
+.std-section-progress-bar {
+    height: 6px;
+    background: var(--bg-card-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.std-section-progress-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    transition: width 0.4s ease;
+}
+
+.std-section-progress-fill.physics {
+    background: var(--phy-color);
+}
+
+.std-section-progress-fill.chemistry {
+    background: var(--chem-color);
+}
+
+.std-section-progress-fill.maths {
+    background: var(--math-color);
+}
+
+
+/* =========================================================
+   STANDARD BODY
+   ========================================================= */
+
+.std-section-body {
+    padding: 0 20px 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.std-section-body.collapsed {
+    display: none;
+}
+
+
+/* =========================================================
+   CATEGORY GROUPS
+   ========================================================= */
+
+.category-group-block {
+    margin-top: 20px;
+}
+
+.category-group-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--text-secondary);
+    padding: 8px 4px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chapter-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER MASTERY CARD
+   ========================================================= */
+
+.chapter-mastery-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.chapter-mastery-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.chapter-card-main {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 16px;
+}
+
+.chapter-num-badge {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: var(--radius-full);
+    background: var(--primary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.chapter-card-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.chapter-card-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.chapter-card-title-row h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.chapter-card-stats-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.card-stat-chip {
+    background: var(--bg-card-subtle);
+    border-radius: var(--radius-sm);
+    padding: 4px 8px;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.card-stat-chip strong {
+    color: var(--text-primary);
+}
+
+.pyq-pct-chip {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+/* Topics button */
+.topics-toggle-btn {
+    flex-shrink: 0;
+    padding: 7px 11px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-card-subtle);
+    color: var(--text-secondary);
+    border-radius: var(--radius-md);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.topics-toggle-btn:hover {
+    background: var(--primary-light);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+
+/* =========================================================
+   TOPIC CHECKLIST
+   ========================================================= */
+
+.topic-checklist {
+    border-top: 1px solid var(--border-color);
+    padding: 14px 16px 16px;
+    background: var(--bg-card-subtle);
+}
+
+.topic-checklist .topics-grid {
+    margin-top: 0;
+}
+
+.topic-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 9px 11px;
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.topic-check-item:hover {
+    border-color: var(--primary);
+}
+
+.topic-check-item input {
+    margin-top: 2px;
+    accent-color: var(--primary);
+}
+
+.topic-check-item.done {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #16a34a;
+}
+
+.dark-theme .topic-check-item.done {
+    background: rgba(22, 163, 74, 0.12);
+    border-color: rgba(34, 197, 94, 0.3);
+    color: #4ade80;
+}
+
+
+/* =========================================================
+   EMPTY SEARCH RESULT
+   ========================================================= */
+
+.empty-chart-fallback {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.empty-chart-fallback p {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.empty-chart-fallback span {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .subjects-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .subjects-filter-bar .filter-group:first-child {
+        min-width: 0;
+    }
+
+    .std-section-header {
+        padding: 15px;
+    }
+
+    .std-section-body {
+        padding: 0 12px 16px;
+    }
+
+    .std-section-meta {
+        width: 100%;
+        margin-left: 28px;
+    }
+
+    .chapter-card-main {
+        align-items: flex-start;
+    }
+
+    .chapter-card-title-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .topics-toggle-btn {
+        align-self: flex-start;
+    }
+
+    .chapter-card-stats-row {
+        gap: 5px;
+    }
+
+    .category-group-label {
+        font-size: 12px;
+    }
+}

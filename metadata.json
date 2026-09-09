@@ -1,0 +1,6 @@
+{
+  "name": "JEE & KCET Prep Tracker",
+  "description": "Comprehensive JEE Main, JEE Advanced, and KCET preparation tracker with spaced repetition, weakness analysis, and daily study planner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
